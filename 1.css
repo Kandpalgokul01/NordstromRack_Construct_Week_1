@@ -1,0 +1,26 @@
+#carsur{
+    width:100%;
+    position:relative;
+    cursor:pointer;
+}
+#cursor>img{
+   width: 100%;
+}
+#cursor>button{
+    position:absolute;
+    top:40%;
+    font-size:30px;
+    color:red;
+    background-color: black;
+}
+#curson>button:first-child{
+    left:5%
+}
+#cursor>button:last-child{
+    right:5%;
+}
+#poster{
+    width:50%;
+    display:grid;
+    margin:auto;
+}
