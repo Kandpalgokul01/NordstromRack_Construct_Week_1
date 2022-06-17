@@ -1,45 +1,139 @@
-.rack{
+#navbar>h4:first-child {
     text-align: center;
-  }
-  .rack>h1{
-     font-size: 25px; 
-  }
-  .rack>input{
-      width:230px;
-      padding:10px 5px 10px 5px;
-      text-align: center;
-  }
-  .fact{ 
-      margin-top: 50px;
-      width: 90%;
-      background-color:rgb(248, 245, 240);
-  padding:20px 0px 20px 200px ;
-  font-size:18px ;
-  }
-  .fact>p{
-      margin-top:-6px ;
-  }
-  .fact>div{
-      margin-top:-6px ;
-  }
- 
-  .card{
-    width:100%;
-    margin-top:60px;
-margin-bottom: 60px;
+    background-color: #00819d;
+    color: white;
+    width: 100%;
+    padding: 8px 0px;
+}
 
-  }
-  .card>div:last-child{
+#navbar>h4>span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+#navbar>#searchBar {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar>#searchBar>a>img:first-child {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#navbar>#searchBar>img:last-child {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+#navbar>#searchBar>form>input {
+    padding: 15px;
+    width: 700px;
+    margin-right: 10px;
+
+}
+hr {
+    width: 98%;
+    margin: auto;
+    
+
+}
+
+.NavbarHead {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.NavbarHead>a:nth-child(11){
+    color:skyblue;
+}
+
+a {
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+
+}
+.NavbarHead>a:first-child {
+    color: red;
+}
+#sign{
+    border: 1px solid red;
+  
+   color:grey;
+   border:transparent;
+   font-size: large;
+   cursor: pointer;
+}
+a:hover{
+    color: #00819d;
+    text-decoration: underline 3px; 
+    text-underline-position:under;
+}
+
+
+/* navbar css */
+
+.rack{
+    /* text-align: center; */
+    /* border: 5px solid green; */
+    width: 98%;
+    margin: auto;
+}
+.rack>h1{
+    font-size: 28px; 
+}
+.rack>div:nth-child(2){
+    width:230px;
+    padding:10px 5px 10px 5px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #00819d;
+    color: #00819d;
+}
+.rack>div:nth-child(2):hover{
+    background-color: #00819d;
+    color: white;
+}
+
+.fact{ 
+    margin-top: 50px;
+    font-size:18px ;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+}
+.fact>img{
+    width: 100%;
+}
+ 
+.card{
+width:100%;
+margin-top:60px;
+/* margin-bottom: 60px; */
+height: 200px;
+}
+
+.card>div:last-child{
 margin-top: -75px;
-  }
-  .card>div>img{
-    width:100%;
-    height:500px; 
-  }
+}
+.card>div>img{
+width:100%;
+}
 #abb{
     width:40%;
     display: flex;
-justify-content: space-around;
+    justify-content: space-around;
 }
 #abb>a{
     color:rgb(4, 114, 157);
@@ -47,10 +141,10 @@ justify-content: space-around;
 
 h2{
     font-size: 24px;
-  
 }
+
 .chip{
-    margin-top:-10px;
+    margin-top:600px;
 }
 h1{
     font-size: 25px;
@@ -60,16 +154,16 @@ h1{
 .ccc{
     width:100%;
     /* height: 300px; */
-    border:1px solid red;
+    /* border:20px solid red; */
     display:flex;
     justify-content: space-around;
-margin-bottom: 50px;
-margin-top: 50px;
-overflow: scroll;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    overflow: scroll;
 }
-/* .ccc>div{
-   
-} */
+.ccc>div{
+    width: 500px;
+}
 .ccc>div>img{
   width:100%;
   height: 60%;
@@ -138,9 +232,9 @@ button{
     border-radius :360px;
 }
 #logo>img{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width:100%;
-    height:150px;
+    /* height:150px; */
 }
 .groom{
 
@@ -156,19 +250,10 @@ font-weight: bold;
 text-decoration: underline;
 }
 #grey{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns:repeat(5,1fr);
-    grid-template-rows:auto;
-   column-gap:25px; 
-   margin-bottom: 100px;
+}
 
-}
-#grey>div>img{
-    width:100%;
-    height: 250px;
-    margin-bottom: 5px;
-}
 #o{
     font-weight: bold;
 }
@@ -176,9 +261,6 @@ text-decoration: underline;
     margin-top:-10px;
 display:flex;
 align-items: center;
-}
-#grey>div>p{s
-    margin-top:-10px;
 }
 #cr{
 
@@ -203,6 +285,7 @@ align-items: center;
 }
 #more>a{
     color:teal;
+    margin-left: -20px;
 }
 #src>div>a{
     color:teal;
@@ -272,4 +355,224 @@ margin-bottom: 70px;
 #y{
     /* border: 1px solid red; */
     text-align: center;
+}
+
+
+/* scrollbar */
+
+#trending{
+    /* border: 5px solid red; */
+    width: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+/* arrow:left */
+#leftButton{
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-top: -330px;
+    font-size: 60px;
+    border: none;
+    left: 20px;
+    color: gray;
+}
+/* arrow :right */
+#rightButton{
+    background-color: transparent;
+    /* background-color: green; */
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 95.1%;
+    top: -330px;
+    font-size: 60px;
+    border: none;
+    color: gray;
+}
+
+#trendingDiv{
+    /* border: 5px solid black; */
+    font-size: 14px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    height: 0px;
+}
+#trendingDiv>div{
+    /* border: 1px solid black; */
+    margin-right: 15px;
+}
+#trendingDiv>div>img{
+    /* border: 100px solid red; */
+    border:1px solid #e6dfdf;
+    height: 470px;
+    width: 470px;
+}
+#trendingDiv>div>p:nth-child(2){
+    color: black;
+    font-weight: bold;
+    margin: 10px 0 5px 2px;
+}
+#trendingDiv>div>p:nth-child(3){
+    color: gray;
+    margin: 0;
+    margin-left: 2px;
+}
+/* @media (min-width:0px) and (max-width:1056px){
+    #trending{
+        width: 90%;
+    }
+    #rightButton{
+        left: 126%;
+    }
+    #trending{
+        width: 120%;
+    }
+} */
+
+/* trending now*/
+
+#tread{
+    /* border: 5px solid red; */
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: scroll;
+    /* margin-top: 50px; */
+    margin-bottom: 20px;
+}
+/* arrow:left */
+#treadleftButton{
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-top: -350px;
+    font-size: 60px;
+    border: none;
+    left: 20px;
+    color: gray;
+}
+/* arrow :right */
+#treadrightButton{
+    background-color: transparent;
+    /* background-color: green; */
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 97%;
+    top: -350px;
+    font-size: 60px;
+    border: none;
+    color: gray;
+}
+
+#treadDiv{
+    /* border: 5px solid black; */
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    height: 0px;
+}
+#treadDiv>div{
+    /* border: 1px solid black; */
+    margin-right: 15px;
+}
+#treadDiv>div>img{
+    /* border: 100px solid red; */
+    border:1px solid #e6dfdf;
+    height: 400px;
+    width: 250px;
+    margin-left: 10px;
+}
+#treadDiv>div>p:nth-child(2){
+    color: red;
+    font-weight: bold;
+}
+#treadDiv>div>p:nth-child(3){
+    color: gray;
+    margin: 0;
+    margin-left: 2px;
+}
+
+
+/* grey */
+
+
+#grey{
+    /* border: 5px solid red; */
+    /* width: 95%; */
+    margin: auto;
+    box-sizing: border-box;
+    overflow: scroll;
+    /* margin-top: 50px; */
+    margin-bottom: 130px;
+}
+/* arrow:left */
+#greyleftButton{
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-top: -400px;
+    font-size: 60px;
+    border: none;
+    left: 20px;
+    color: gray;
+}
+/* arrow :right */
+#greyrightButton{
+    background-color: transparent;
+    /* background-color: green; */
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 97%;
+    top: -400px;
+    font-size: 60px;
+    border: none;
+    color: gray;
+}
+
+#greyDiv{
+    /* border: 5px solid black; */
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    height: 0px;
+}
+#greyDiv>div{
+    /* border: 1px solid black; */
+    margin-right: 15px;
+}
+#greyDiv p{
+    margin-left: 15px;
+}
+#greyDiv>div>img{
+    /* border: 100px solid red; */
+    border:1px solid #e6dfdf;
+    height: 400px;
+    width: 250px;
+    margin-left: 10px;
+}
+#greyDiv>div>p:nth-child(2){
+    /* color: red; */
+    /* font-weight: bold; */
+}
+#greyDiv>div>p:nth-child(3){
+    color: gray;
+    margin: 0;
+    margin-left: 2px;
 }

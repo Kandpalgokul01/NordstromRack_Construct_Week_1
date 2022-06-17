@@ -8,402 +8,899 @@
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+
+  <div id="navbar">
+    <h4>Give $150 in Gift Cards,earn a $25 Promo Card! Ends 6/19. <span>Gift Cards & Restriction</span></h4>
+    <div id="searchBar">
+       <a href=""><img src="data:image/png;base64,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"
+            alt=""></a> 
+        <form>
+            <input type="search" placeholder="Search for products or brands">
+        </form>
+        <h2 id="sign"> <a href="signUp.html">Sign Up</a> </h2>
+            
+       
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvrjNjezNbh-cXRToEjKhMPl3mC40G_gFL6Q&usqp=CAU"
+            alt="">
+    </div>
+    <hr>
+    <div class="NavbarHead">
+        <a href="">
+            <h3>Clearance</h3>
+        </a>
+        <a href="">
+            <h3>Women</h3>
+        </a>
+        <a href="">
+            <h3>Men</h3>
+        </a>
+        <a href="">
+            <h3>Kids</h3>
+        </a>
+        <a href="">
+            <h3>Shoes</h3>
+        </a>
+        <a href="">
+            <h3>Activwear</h3>
+        </a>
+        <a href="">
+            <h3>Bag & Accessories</h3>
+        </a>
+        <a href="">
+            <h3>Home</h3>
+        </a>
+        <a href="">
+            <h3>Beauty</h3>
+        </a>
+        <a href="">
+            <h3>Gifts</h3>
+        </a>
+        <a href="">
+            <h3>Flash & Events</h3>
+        </a>
+
+        </div>
+</div>
+
+<!-- navbar html close -->
+
+
     <div class="rack">
-        <h1>More to Rack,easier and faster.</h1>
-        <input type="text" id="text" placeholder="Sign In or Create an Account">
+        <h1>More to Rack, easier and faster.</h1>
+        <!-- <input type="text" id="text" placeholder="Sign In or Create an Account"></input> -->
+        <div>Sign In or Create an Account</div>
 
-    </div>
+        <div class="fact">
+            <img src="https://n.nordstrommedia.com/id/9e22d9f7-3c96-4946-aa3c-8dad07562b84.jpeg?h=200&w=1608" alt="">
+            <!-- <h5>Give Dads & Grads $ 150 in Gift Cards,Earn a $25 Promo Card</h5>
+            <p>Online only.Ends June 19 at 11.59pm ET.Restrictions apply.</p>
+            <div><a href="" target="">Shop Gift Cards & See Restrictions </a></div> -->
+        </div>
 
-    <div class="fact">
-        <h5>Give Dads & Grads $ 150 in Gift Cards,Earn a $25 Promo Card</h5>
-        <p>Online only.Ends June 19 at 11.59pm ET.Restrictions apply.</p>
-        <div><a href="" target="">Shop Gift Cards & See Restrictions </a></div>
-    </div>
+        <div id="c1"> 
+            <div class="card">
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/3c67fa87-474f-40d0-9b52-53b794baa14d.jpeg?h=720&w=1608"
+                    alt="error">
+                </div>
 
-    <div> 
-        <div class="card">
-            <div>
-                <img src="https://n.nordstrommedia.com/id/88a5efc6-c3b9-4b31-9a19-01445ff9190b.jpeg?h=720&w=1608"
-                alt="error">
-            </div>
-
-            <div>
-                <h2>Gift for Every Dad and Father Figure</h2>
-                <p>Father's Day is Sunday,June 19.</p>
-                <div id="abb">
-                    <a href="" target="">All Father's Day Gifts </a>
-                    <a href="" target="">Top Gifts </a>
-                    <a href="" target="">Gifts under $25</a>
-                    <a href="" target="">Causal Gifts </a>
-                    <a href="" target="">Classic Gifts</a>
+                <div>
+                    <h2>Gift for Every Dad and Father Figure</h2>
+                    <p>Father's Day is Sunday,June 19.</p>
+                    <div id="abb">
+                        <a href="" target="">All Father's Day Gifts </a>
+                        <a href="" target="">Top Gifts </a>
+                        <a href="" target="">Gifts under $25</a>
+                        <a href="" target="">Causal Gifts </a>
+                        <a href="" target="">Classic Gifts</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="chip">
-        <h1>Here Today Gone in a Flash</h1>
-        <div class="ccc">
-            <div>
-                <img src="https://n.nordstrommedia.com/id/e0b5cb2c-879a-4085-a9d2-71cfaa4f9b8b.jpeg?h=1224&w=1224"
-                alt="error">
-                <p id="abc">Steve Madden Up to<br> 55% Off </p>
-                <p>Event ends in 2 days,7 hours,and 5 minutes</p>
-
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/2d7c7ece-7448-4b60-a24e-a0cc90016883.jpeg?h=1224&w=1224"
-                alt="error">
-                <P id="abc">Steve Madden Men's Shoes Up to 50% Off</P>
-                <p>Event ends in 2 days,7 hours,and 5 minutes</p>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/49178830-a173-4f93-95aa-569d1510cab2.jpeg?h1=224&w=1224"
-                alt="error">
-                <p id="abc">Steve Madden Kids' Shoes Up to 50% Off</p>
-                <p>Event ends in 2 days,7 hours,and 5 minutes</p>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/03f556f9-e0ea-43f6-8be5-5bc20a26b668.jpeg?h=1224&w=1224"
-                alt="error">
-                <P id="abc">Tops Under 4$ 50 including plus</P>
-                <p>Event ends in 2 days,7 hours,and 5 minutes</p>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/49178830-a173-4f93-95aa-569d1510cab2.jpeg?h=1224&w=1224"
-                alt="error">
-                <P id="abc">On Tread Handbags & More Feat .Rebecca Minkoff </P>
-                <p>Event ends in 2 days,7 hours,and 5 minutes</p>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/cddde160-1407-4805-8442-2c15a41d85e3.jpeg?h=1224&w=1224"
-                alt="error">
-                <P id="abc" >Night-Out Dresses Up to 70% Off</P>
-                <p>Event ends in 2 days,7 hours,and 5 minutes</p>
-            </div>
-
-        </div>
-    </div>
-
-    <h1>Wear on Repeat</h1>
-
-    <div id="wear">
-        <div>
-            <img src="https://n.nordstrommedia.com/id/a0dd02d9-eec6-4fb5-8944-8de326bf7b58.jpeg?h=555&w=804"
-            alt="error">
-            <h3>Tops & Shorts Under $50</h3>
-            <p>From Melrose and Market,Bp.,Abound and more</p>
-            <div id="tops">
-            <a href="" target="">Women's Tops</a>
-            <a href="" target="">Women's Shorts</a></div>
-
-        </div>
-        <div>
-            <img src="https://n.nordstrommedia.com/id/7036f26c-b368-423e-adea-2c88508d55d8.jpeg?h=530&w=7502"
-            alt="error">
-            <h3>HOUSE OF WANT,Marc Jacobs & More</h3>
-            <p>Bright bags for summer? Yes.</p>
-            <a href="" target="">Handbags</a>
-        </div>
-    </div>
-
-    <h3>Trending now</h3>
-
-    <div id="tread">
-        <div>
-            <img src="https://n.nordstrommedia.com/id/sr3/518a47b0-4bd4-410d-9b56-5a2b8988d027.jpeg?q=45&dpr=2&h=135.8&w=88"
-            alt="error">
-        </div>
-        <div>
-            <img src="https://n.nordstrommedia.com/id/sr3/8a52d5c4-0944-421f-acad-03504d096796.jpeg?q=45&dpr=2&h=135.8&w=88"
-            alt="error">
+        <div class="chip">
+            <h1>Here Today Gone in a Flash</h1>
+            <div id="trending">
+                <div id="trendingDiv">
+                    <!-- images -->
+                </div><!-- trendingDiv close -->
+                
+            </div><!-- trending close -->
+            <button id="leftButton"><</button>
+            <button id="rightButton">></button>
         </div>
 
-        <div>
-            <img src="https://n.nordstrommedia.com/id/sr3/eae0fc5c-7727-4848-afb8-b94fa42c9c4f.jpeg?q=45&dpr=2&h=365.31&w=230"
-            alt="error">
-        </div>
-        <div>
-            <img src="https://n.nordstrommedia.com/id/sr3/41bc1350-f414-4cfe-a24f-33f9f26f784b.jpeg?q=45&dpr=2&h=365.31&w=230"
-            alt="error">
-        </div>
-        <div>
-            <img src="https://n.nordstrommedia.com/id/sr3/65240b39-d62d-480a-ab49-5e6097d10e3e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"
-            alt="error">
-        </div>
-        <div>
-            <button ></button>
-            </button> <button></button>
-            <p id ="red">POLARBOX</p>
-            <P  id="red">$59.97(40% Off)</P>
-            <p><del>$99.99</del></p>
-            </p>
-        </div>
-        <div><p id ="red">Fendi</p>
-            <P id="red">$119.97(69% Off)</P>
-            <p><del>$390.00</del></p>
-        </div>
-        <div>
-            <p id ="red">Limited-Time Sale</p>
-            <p>Nike</p>
-            <P id="red">$56.00(20% Off)</P>
-            <p><del>$70.00</del></p>
-        </div>
-        <div>
-            <p id ="red">New Markdown</p>
-            <p>Longchamp</p>
-            <P id="red">$67.46(46% Off)</P>
-            <p><del>$125.00</del></p>
-        </div>
-        <div>
-            <p id ="red">ASTR the label</p>
-            <P id="red">$49.97-$52.97(Up to 49% off)</P>
-            <p><del>$99.00</del></p>
-        </div>
-    </div>
-
-    <div id ="logo">
-        <img src="https://n.nordstrommedia.com/id/feb758c1-77d8-4a62-a023-90408eb69e34.jpeg?h=200&w=1608"
-        alt="error">
-        <div>
-            <p>Father's Day in Sunday,June</p>
-            <p>Pick the shipping method thst works</p>
-            <div>
-                <a href="" target="">The Father's Days Gifts shop </a>
-                <a href="" target="">Find Your store</a>
-                <a href="" target="">Gift Cards</a>
-            </div>
-        </div>
-    </div>
-    <div class="groom">
-        <div id="blue">
-            <p>Women's White <br>Clothing & More</p>
-            <p>Mother of the Bride</p>
-            <p>Bridesmaid</p>
-            <p>Women's Shoes</p>
-            <p>Men's Suits,Shirts & Shoes</p>
-        </div>
-        <div  id="grey">
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/675c4b4e-8cc0-4778-9630-a1ed689cafc3.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
-                alt="error">
-                Love By Design 
-                <div id="gg"><p id="o" > $54.99</p>(43% off) </div>  
-                <p> <del>$98.00</del></p>
-                <p id="cr"> *****</p>
-            </div> 
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/bd1917a1-cad7-475e-8932-314a8b86e21e.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
-                alt="error">
-                Marina
-                <div  id="gg"><p id="o"> $52.97</p>(55% off) </div>
-                <p><del>$118.00 </del></p>
-                <p id="cr">  *****</p>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/8753dc5e-3ce5-407c-b2ba-4ebc5633aabd.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
-                alt="error">
-                Area Stars
-                <div id="gg"><p id="o"> $69.97</p>(60% off)</div>
-                <p><del>$175.00 </del></p>
-                <p id="cr">*****</p>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/46cb6de8-ab67-4d68-8e43-16dbdd156340.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
-                alt="error">
-                MEGHANLA
-                <div id="gg"  ><p id="o"> $99.97</p>(60% off) </div>
-                <p> <del>$129.00 </del><p>
-                <p id="cr">*****</p>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/f8150f02-4f53-47f4-b50d-72f7e8f34c16.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
-                alt="error">
-                NSR
-                <div  id="gg"> 
-                    <p id="o"> $49.97</p>(49% off )<br>
-                </div>
-                <p><del>$98.00 </del><p>
-                <p id="cr">*****</p>
-            </div>
-        </div>
-        <h1>More to Explore</h1>
-
-        <div id="src">
-            <div>
-                <img src="https://n.nordstrommedia.com/id/9456cb86-80f8-44a8-8217-2f3cd48bdfe5.jpeg?h=501&w=536"
-                alt="error">
-                <p class="rev">Sneakers from $50</p>
-                <p>From New Balance,ASICS and more.</p>
-                <div  id="more">
-                    <a href="" target="">Women's Active Sneakers</a>    
-                    <a href="" target=""> Men's Active Sneakers</a>
-                </div>
-            </div>
+        <h1>Wear on Repeat</h1>
         
-            <div >
-                <img src="https://n.nordstrommedia.com/id/bac9e13b-caa8-4b8b-ba2f-d1d58ad7d7d2.jpeg?h=501&w=536"
-                alt="error">
-                <p class="rev">Ciate & More</p>
-                <p>That Just-in-from-the-beach glow? Here's how it's done.</p>
-                <div  id="mor"> <a href="" target="">Ciate </a>
-                    <a href="" target="">skin care</a>
-                    <a href="" target=""> sun Care</a>
-                </div>
-            </div>
+        <div id="wear">
             <div>
-                <img src="https://n.nordstrommedia.com/id/0dc01585-a690-4082-b6ae-6a31bfbc5eb8.jpeg?h=501&w=536"
+                <img src="https://n.nordstrommedia.com/id/a0dd02d9-eec6-4fb5-8944-8de326bf7b58.jpeg?h=555&w=804"
                 alt="error">
-                <p class="rev">Outdoor Entertaining from $24.97</p>
-                <p>For every warm-weather gathering</p>
-                <a href="" target="">Dining & Entertaining</a>
-            </div>  
-        </div>
+                <h3>Tops & Shorts Under $50</h3>
+                <p>From Melrose and Market,Bp.,Abound and more</p>
+                <div id="tops">
+                <a href="" target="">Women's Tops</a>
+                <a href="" target="">Women's Shorts</a></div>
 
-        <h3>Best-selling items</h3>
-        <div id="best">
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/b4530152-2a24-4daf-9cbe-32159c296b54.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p>Lovestitch</p>  
-                <div> <P id="up">$23.96-$29.97(Up to 72% off Select items)</P>
-                    <p><del>$88.00</del></p>
-                </div>
             </div>
             <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/08ada965-cd24-45a0-9846-b7d539c6c658.jpeg?q=45&dpr=2&h=365.31&w=230"
+                <img src="https://n.nordstrommedia.com/id/7036f26c-b368-423e-adea-2c88508d55d8.jpeg?h=530&w=7502"
                 alt="error">
-                <p> MAC Consmetics</p>  
-                <div> 
-                    <P  id="up">$7.80-$13.00(Up to 40% off Select items)</P>
-                    <p><del>$13.00</del></p>
-                </div>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/397c648f-a056-4325-b704-188f851d9d99.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p>Madewell</p> 
-                <div> <P  id="up">$9.33-$16.97(Up to 52% off Select items)</P>
-                    <p><del>$16.97-$19.50</del></p>
-                </div>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/e2da6d50-d2aa-4c85-a756-479560a662ed.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p>Tommy Bahama</p> 
-                <div> <P  >$19.97(63% off)</P>
-                    <p><del>$54.50</del></p>
-                </div>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/246b53d6-0cb4-4b69-939e-093355accf9f.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p>Tommy Bahama</p> 
-                <div> <P>$39.97(59% off)</P>
-                    <p><del>$99.50</del></p>
-                </div>
-            </div>
-
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/e6ca5b71-29fd-4299-9eb1-20f9f300e18e.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p> MAC Consmetics</p>  
-                <div> <P >$5.98-$19.00(Up to 68% off Select items)</P>
-                    <p><del>$19.00-21.00</del></p>   
-                </div>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/d94bf767-3420-4b95-a58c-ed36066b7bb6.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p id="up"> New Markdown</p>  
-                <p >Z by Zella</p>
-                <div > <P  id="up" >$7.48-$14.97(Up to 50% off Select items)</P>
-                    <p><del>$14.97</del></p>   
-                </div>
-            </div>
-        </div>
-        <h1>More to Know</h1>
-        <div class="offer">
-            <div>
-                <img src="https://n.nordstrommedia.com/id/b696c8a3-f2e2-4738-bfdd-dcffba6ee55a.jpeg?h=188&w=402"
-                alt="error">
-                <p class="just">An Exclusive Offer</p>
-                <p>Just for new Nordstrom credit cardmembers,Restrictions apply.</p>
-                <a href="" target="" >Apply Now</a>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/bd0e1c8b-f6c0-4d46-899f-fc9d07e014ac.jpeg?h=188&w=402"
-                alt="error">
-                <p class="just"> Nordstrom Celebrates</p>
-                <p>Join us we celebrate, spotlight and give back to the LGBTQIA+community.</p>
-                <a href="" target="" >Learn More</a>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/2961092c-5387-4c52-9c94-1379fe2ac7ec.jpeg?h=188&w=4022"
-                alt="error">
-                <p class="just">We Launched</p>
-                <p>Join Pete Nordstrom and special guests for a behind-the-scenes look at Nordstrom.</p>
-                <a href="" target="" >Listen to All Episodes</a>
-            </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/e071bbdf-e456-41a9-bed2-cd7974109afe.jpeg?h=188&w=402"
-                alt="error">
-                <p class="just">Shop online or on our app & pick up at Nordstrom Rack Or NordStrom Rack or NordStrom. </p>
-                <a href="" target="" >Learn More</a>
+                <h3>HOUSE OF WANT,Marc Jacobs & More</h3>
+                <p>Bright bags for summer? Yes.</p>
+                <a href="" target="">Handbags</a>
             </div>
         </div>
 
-        <h1>Rack Your Look</h1>
-        <p id="y">Click your favorite Photos to shop our Instagram,and use #nordstromrack for a chance to be featured!</p>
-        <div class="click">
-            <div><img src="https://cdn.dashhudson.com/media/640/1635798101.057760741882.jpeg" alt="error"></div>
-            <div><img src="https://cdn.dashhudson.com/media/640/1628598956.37983440346.jpeg" alt="error"></div>
-            <div><img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjQ3Nzk2NTA4LjI2NDMxNTE4MzE5MS5qcGVn.jpg?w=640&h=640&fit=cover"
-                alt="error">
-            </div>
-            <div><img src="https://cdn.dashhudson.com/media/640/1625812071.39856985243.jpeg" alt="error"></div>
-            <div><img src="https://cdn.dashhudson.com/media/640/1633793377.34640710585.jpeg" alt="error"></div>
-            <div><img src="https://cdn.dashhudson.com/media/640/1626312391.206982943516.jpeg" alt="error"></div>
-            <div><img src="https://cdn.dashhudson.com/media/640/1619542695.85628681795.jpeg" alt="error"></div>
-            <div> <img src="https://cdn.dashhudson.com/media/640/1633887270.044514738442.jpeg" alt="error"></div>
-            <div>
-                <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjQ0OTU2MDExLjA1NzIyOTM2NTE1Ny5qcGVn.jpg?w=640&h=640&fit=cover"
-                alt="error">
-            </div>
+        <h3>Trending now</h3>
+
+        <div id="tread"><!-- treading -->
+            <div id="treadDiv">
+                <!-- images -->
+            </div><!-- treadgDiv close -->    
+        </div><!-- tread close -->
+        <button id="treadleftButton"><</button>
+        <button id="treadrightButton">></button>
+
+        <div id ="logo">
+            <img src="https://n.nordstrommedia.com/id/1793a6ae-12a6-46d9-9c2e-23aa9ff1a0e5.jpeg?h=200&w=1608"
+            alt="error">
+            <!-- <div>
+                <p>Father's Day in Sunday,June</p>
+                <p>Pick the shipping method thst works</p>
+                <div>
+                    <a href="" target="">The Father's Days Gifts shop </a>
+                    <a href="" target="">Find Your store</a>
+                    <a href="" target="">Gift Cards</a>
+                </div>
+            </div> -->
         </div>
-        <h3>Recently Viewed</h3>
-        <div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/8c76d9ed-b2ba-49a2-96d4-87d821309413.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p>Lovestitch</p>
-            <div> <p>$23.96-$29.97(Up to 72% off select items)</p>
-                <p><del>$88.00</del></p></div>
-            </div> 
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/c929dedc-8816-471d-b828-28dcc8c8cd72.jpeg?q=45&dpr=2&h=365.31&w=230" alt="error">
-                <p>NSR</p>
-                <div><p>$54.99(42% off)</p></div>
-                <p><del>$95.00</del></p>
+        <div class="groom">
+            <div id="blue">
+                <p>Women's White <br>Clothing & More</p>
+                <p>Mother of the Bride</p>
+                <p>Bridesmaid</p>
+                <p>Women's Shoes</p>
+                <p>Men's Suits,Shirts & Shoes</p>
             </div>
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/511c2fde-5c7a-4306-a2c0-abd0f07e27a0.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p>Limited</p>
-                <p>Prada</p>
-                <div> <p>$124.77(58% off)</p>
-                    <p><del>$298.00</del></p>
+
+
+
+            <!-- <div  id="grey"> -->
+              <div id="grey"><!-- treading -->
+                <div id="greyDiv">
+                    <!-- images -->
+                </div><!-- treadgDiv close -->    
+            </div><!-- tread close -->
+            <button id="greyleftButton"><</button>
+            <button id="greyrightButton">></button>
+                
+            <h1>More to Explore</h1>
+
+            <div id="src">
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/9456cb86-80f8-44a8-8217-2f3cd48bdfe5.jpeg?h=501&w=536"
+                    alt="error">
+                    <p class="rev">Sneakers from $50</p>
+                    <p>From New Balance,ASICS and more.</p>
+                    <div  id="more">
+                        <a href="" target="">Women's Active Sneakers</a>    
+                        <a href="" target=""> Men's Active Sneakers</a>
+                    </div>
                 </div>
-            </div> 
-            <div>
-                <img src="https://n.nordstrommedia.com/id/sr3/b329620a-cebb-4cce-8101-870fa9fba062.jpeg?q=45&dpr=2&h=365.31&w=230"
-                alt="error">
-                <p>Madewell</p>
-                <div> <p>$9.33-$16.97(Up to 52% off select items)</p>
-                    <p><del>$16.97-$19.50</del></p>
+            
+                <div >
+                    <img src="https://n.nordstrommedia.com/id/bac9e13b-caa8-4b8b-ba2f-d1d58ad7d7d2.jpeg?h=501&w=536"
+                    alt="error">
+                    <p class="rev">Ciate & More</p>
+                    <p>That Just-in-from-the-beach glow? Here's how it's done.</p>
+                    <div  id="mor"> <a href="" target="">Ciate </a>
+                        <a href="" target="">skin care</a>
+                        <a href="" target=""> sun Care</a>
+                    </div>
                 </div>
-            </div> 
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/0dc01585-a690-4082-b6ae-6a31bfbc5eb8.jpeg?h=501&w=536"
+                    alt="error">
+                    <p class="rev">Outdoor Entertaining from $24.97</p>
+                    <p>For every warm-weather gathering</p>
+                    <a href="" target="">Dining & Entertaining</a>
+                </div>  
+            </div>
+
+            <h3>Best-selling items</h3>
+            <div id="best">
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/b4530152-2a24-4daf-9cbe-32159c296b54.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p>Lovestitch</p>  
+                    <div> <P id="up">$23.96-$29.97(Up to 72% off Select items)</P>
+                        <p><del>$88.00</del></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/08ada965-cd24-45a0-9846-b7d539c6c658.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p> MAC Consmetics</p>  
+                    <div> 
+                        <P  id="up">$7.80-$13.00(Up to 40% off Select items)</P>
+                        <p><del>$13.00</del></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/397c648f-a056-4325-b704-188f851d9d99.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p>Madewell</p> 
+                    <div> <P  id="up">$9.33-$16.97(Up to 52% off Select items)</P>
+                        <p><del>$16.97-$19.50</del></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/e2da6d50-d2aa-4c85-a756-479560a662ed.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p>Tommy Bahama</p> 
+                    <div> <P  >$19.97(63% off)</P>
+                        <p><del>$54.50</del></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/246b53d6-0cb4-4b69-939e-093355accf9f.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p>Tommy Bahama</p> 
+                    <div> <P>$39.97(59% off)</P>
+                        <p><del>$99.50</del></p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/e6ca5b71-29fd-4299-9eb1-20f9f300e18e.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p> MAC Consmetics</p>  
+                    <div> <P >$5.98-$19.00(Up to 68% off Select items)</P>
+                        <p><del>$19.00-21.00</del></p>   
+                    </div>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/d94bf767-3420-4b95-a58c-ed36066b7bb6.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p id="up"> New Markdown</p>  
+                    <p >Z by Zella</p>
+                    <div > <P  id="up" >$7.48-$14.97(Up to 50% off Select items)</P>
+                        <p><del>$14.97</del></p>   
+                    </div>
+                </div>
+            </div>
+            <h1>More to Know</h1>
+            <div class="offer">
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/b696c8a3-f2e2-4738-bfdd-dcffba6ee55a.jpeg?h=188&w=402"
+                    alt="error">
+                    <p class="just">An Exclusive Offer</p>
+                    <p>Just for new Nordstrom credit cardmembers,Restrictions apply.</p>
+                    <a href="" target="" >Apply Now</a>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/bd0e1c8b-f6c0-4d46-899f-fc9d07e014ac.jpeg?h=188&w=402"
+                    alt="error">
+                    <p class="just"> Nordstrom Celebrates</p>
+                    <p>Join us we celebrate, spotlight and give back to the LGBTQIA+community.</p>
+                    <a href="" target="" >Learn More</a>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/2961092c-5387-4c52-9c94-1379fe2ac7ec.jpeg?h=188&w=4022"
+                    alt="error">
+                    <p class="just">We Launched</p>
+                    <p>Join Pete Nordstrom and special guests for a behind-the-scenes look at Nordstrom.</p>
+                    <a href="" target="" >Listen to All Episodes</a>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/e071bbdf-e456-41a9-bed2-cd7974109afe.jpeg?h=188&w=402"
+                    alt="error">
+                    <p class="just">Shop online or on our app & pick up at Nordstrom Rack Or NordStrom Rack or NordStrom. </p>
+                    <a href="" target="" >Learn More</a>
+                </div>
+            </div>
+
+            <h1>Rack Your Look</h1>
+            <p id="y">Click your favorite Photos to shop our Instagram,and use #nordstromrack for a chance to be featured!</p>
+            <div class="click">
+                <div><img src="https://cdn.dashhudson.com/media/640/1635798101.057760741882.jpeg" alt="error"></div>
+                <div><img src="https://cdn.dashhudson.com/media/640/1628598956.37983440346.jpeg" alt="error"></div>
+                <div><img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjQ3Nzk2NTA4LjI2NDMxNTE4MzE5MS5qcGVn.jpg?w=640&h=640&fit=cover"
+                    alt="error">
+                </div>
+                <div><img src="https://cdn.dashhudson.com/media/640/1625812071.39856985243.jpeg" alt="error"></div>
+                <div><img src="https://cdn.dashhudson.com/media/640/1633793377.34640710585.jpeg" alt="error"></div>
+                <div><img src="https://cdn.dashhudson.com/media/640/1626312391.206982943516.jpeg" alt="error"></div>
+                <div><img src="https://cdn.dashhudson.com/media/640/1619542695.85628681795.jpeg" alt="error"></div>
+                <div> <img src="https://cdn.dashhudson.com/media/640/1633887270.044514738442.jpeg" alt="error"></div>
+                <div>
+                    <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjQ0OTU2MDExLjA1NzIyOTM2NTE1Ny5qcGVn.jpg?w=640&h=640&fit=cover"
+                    alt="error">
+                </div>
+            </div>
+            <!-- <h3>Recently Viewed</h3>
+            <div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/8c76d9ed-b2ba-49a2-96d4-87d821309413.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p>Lovestitch</p>
+                <div> <p>$23.96-$29.97(Up to 72% off select items)</p>
+                    <p><del>$88.00</del></p></div>
+                </div> 
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/c929dedc-8816-471d-b828-28dcc8c8cd72.jpeg?q=45&dpr=2&h=365.31&w=230" alt="error">
+                    <p>NSR</p>
+                    <div><p>$54.99(42% off)</p></div>
+                    <p><del>$95.00</del></p>
+                </div>
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/511c2fde-5c7a-4306-a2c0-abd0f07e27a0.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p>Limited</p>
+                    <p>Prada</p>
+                    <div> <p>$124.77(58% off)</p>
+                        <p><del>$298.00</del></p>
+                    </div>
+                </div> 
+                <div>
+                    <img src="https://n.nordstrommedia.com/id/sr3/b329620a-cebb-4cce-8101-870fa9fba062.jpeg?q=45&dpr=2&h=365.31&w=230"
+                    alt="error">
+                    <p>Madewell</p>
+                    <div> <p>$9.33-$16.97(Up to 52% off select items)</p>
+                        <p><del>$16.97-$19.50</del></p>
+                    </div>
+                </div> 
+            </div> -->
         </div>
     </div>
 </body>
 </html>
+<script>
+
+var homePageData = [
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/ed2d56e1-4108-4f4f-b3b9-4957c559e89a.jpeg?h=1224&w=1224",
+      title1: "Day Dresses Feat. Eliza J Up to 60% Off",
+      title2:"Event ends in 2 days, 7 hours, and 17 minutes",
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/93817b56-1599-4235-a22b-d02a29d01f06.jpeg?h=1224&w=1224",
+      title1:"Extra 20% Off Selected Women’s Summer Sandals",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/5c1c9d78-d196-46b9-8e05-6294790a5d0d.jpeg?h=1224&w=1224",
+      title1:"Men's Post-Workout Styles Up to 60% Off",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/9fba0da8-3a22-4286-a9c1-c6d4aa428dd1.jpeg?h=1224&w=1224",
+      title1:"Top-Rated Bras Feat. Wacoal from $15",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/84cca842-e02e-462e-b0ca-a15fcdbb5827.jpeg?h=1224&w=1224",
+      title1:"Extra 20% Off Selected Men’s Summer Shoes",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/1f1887af-881d-44d4-904e-298d53690757.jpeg?h=1224&w=1224",
+      title1:"Men's Resortwear & More from $20",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/317d4e93-c058-4d39-b1ed-3351d9a8cf3b.jpeg?h=1224&w=1224",
+      title1:"Club Monaco & More Up to 60% Off",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/5a925a15-2532-48a6-83a6-81e0f771df35.jpeg?h=1224&w=1224",
+      title1:"Chic One-Piece Swimwear Up to 60% Off",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/75eeb2c2-0ce1-4702-930e-43b07bb1dbf9.jpeg?h=1224&w=1224",
+      title1:"High-Rise Denim Shorts & More Under $100",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/a328d838-e980-4be7-a5f2-70ce91b4c3b5.jpeg?h=1224&w=1224",
+      title1:"Men's Short-Sleeve Button-Ups Under $40",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/249cfa2e-881d-4176-8088-d0097661150d.jpeg?h=1224&w=1224",
+      title1:"Stay Cozy With Barefoot Dreams Throws & More Up to 40% Off",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/941d3ec0-6326-4fa9-912a-e9259c2ac0e5.jpeg?h=1224&w=1224",
+      title1:"Best of Handbags Feat. Aimee Kestenberg Under $130",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/f92a3b02-85af-498b-8d64-25aa0b1292c9.jpeg?h=1224&w=1224",
+      title1:"Long-Sleeve Tees for Men from $15",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/695c76a2-7fa3-4ba8-ade0-828feac433f2.jpeg?h=1224&w=1224",
+      title1:"Dressed Up Kids' Looks Up to 50% Off",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/04b2bcba-ac58-403b-a064-774bbc2e86b9.jpeg?h=1224&w=1224",
+      title1:"Plus-Size Summer Styles from $20",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/4ed04b94-a59f-47d5-92a3-1376114bc114.jpeg?h=1224&w=1224",
+      title1:"Extra 20% Off Selected Kids’ Summer Styles",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/a9e2516d-4f63-42a9-8bbb-d4d4d1d558e3.jpeg?h=1224&w=1224",
+      title1:"Bath & Shower Faves Feat. Philosophy & L'Occitane",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/de4d8830-a2f5-46b2-b13f-b77febee9493.jpeg?h=1224&w=1224",
+      title1:"Summer Clean Up! Storage Up to 50% Off",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/a7089e58-62d2-42d4-b625-070477753827.jpeg?h=1224&w=1224",
+      title1:"Get the Perfect Summer Glow Feat. Kopari & Sun Bum",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/e2598214-ef88-4d15-9d83-0d732ac29afc.jpeg?h=1224&w=1224",
+      title1:"Vacation-Ready Jewelry Up to 50% Off",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/d95b2022-3352-4958-ac58-2322657a4e3c.jpeg?h=1224&w=1224",
+      title1:"Men's Belts Starting at $15",
+      title2:"Event ends in 2 days, 7 hours, and 13 minutes"
+    },    
+  ];
+
+
+  var treadData = [
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/469846ae-74ce-4b04-9f3d-63be24563939.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Rayan",
+      price:59.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/16d883de-e92a-4e63-a694-ffe7d0a0378e.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"CROCS",
+      price:27.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/d57f1631-ccd7-4107-ac6a-4e429cd79337.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Givenchy",
+      price:95.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/82238cf7-34a4-493d-ba49-076fb318d021.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Steve Madden",
+      price:39.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/3b4e7b58-0230-4b01-aee7-c42de37ec1d4.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Salvatore Ferrangamo",
+      price:63.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/79a8e513-d055-4eb0-8513-e694dbd424fa.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Dior",
+      price:79.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/511c2fde-5c7a-4306-a2c0-abd0f07e27a0.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Prada",
+      price:124.77,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/9deae64a-2e32-4ac5-be7b-c64c50de1ca7.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Marc Jacobs",
+      price:159.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/e84f12e5-752b-4a82-920a-2f8d520964f7.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Joe's",
+      price:79.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/03320867-fc12-4ce8-81c0-a6422ecd376c.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Salvatore Ferragamo",
+      price:63.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/7e957db1-c7f9-40ea-bf76-9f61f5399714.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Steven New York",
+      price:31.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/0c008582-1af1-4b73-93cd-1f091acefce2.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Dolce Vita",
+      price:49.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/65240b39-d62d-480a-ab49-5e6097d10e3e.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"ASTR the Label",
+      price:49.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/1673ad9d-c4df-4577-828a-cab9f2fb89bc.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Rebecca Minkoff",
+      price:38.48,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/aa941632-4ff4-49c7-892d-6397c39e2ea9.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"ASTR the Label",
+      price:44.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/3315b993-4f38-44d7-bea6-fd97d6aabbce.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"French Connection",
+      price:49.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/b4f0b842-e1e2-4b3e-a51d-61886ffec7ec.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Calson",
+      price:39.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/5b2002be-bae5-4a24-a63c-778aa460fb9b.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Gucci",
+      price:143.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/5ccc5522-6377-4a19-9f9c-7b0bc5e1b1df.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Ray-Ban",
+      price:55.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/8d71eaa3-b816-4a9b-9cdb-936903b79a2f.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Fendi",
+      price:95.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/3ef5d18e-6f9f-4488-9a94-c7addf3917df.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Steve Madden",
+      price:35.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/6fd79852-5ef3-472b-a4c7-1c1ac65546c6.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"CROCS",
+      price:27.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/fd1fffd5-1fb9-4f5c-a3e7-0d04e00a3b23.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Marc Jacobs",
+      price:27.97,
+    },
+    {
+      image_url:
+        "https://n.nordstrommedia.com/id/sr3/8ad27f36-59ed-479c-8487-915d9a623aa0.jpeg?q=45&dpr=2&h=365.31&w=230",
+      limitedSale:"Limited-Time Sale",
+      pname:"Salvatore Ferragamo",
+      price:27.97,
+    },
+      
+  ];
+
+ 
+var clothsData=[
+            
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/675c4b4e-8cc0-4778-9630-a1ed689cafc3.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Love By Design",
+          price:54.99,  
+        },
+
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/46cb6de8-ab67-4d68-8e43-16dbdd156340.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"ASTR the Label",
+          price:39.72,
+        },
+
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/c929dedc-8816-471d-b828-28dcc8c8cd72.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"NSR",
+          price:54.99,
+        },
+        
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/bd1917a1-cad7-475e-8932-314a8b86e21e.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Marina",
+          price:59.97,
+        },
+
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/8753dc5e-3ce5-407c-b2ba-4ebc5633aabd.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"MEGHAN LA",
+          price:99.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/ce06b086-25bc-4916-91ec-3e7d5171b1c2.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"BY DESIGN",
+          price:49.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/f8150f02-4f53-47f4-b50d-72f7e8f34c16.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"NSR",
+          price:49.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/3ddf3c7b-2030-4c9b-b03b-0bdebd896804.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Alexiva Admor",
+          price:69.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/a7e712a3-7963-45a0-9663-fdd304990ebf.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"WAYF",
+          price:59.99,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/65240b39-d62d-480a-ab49-5e6097d10e3e.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"ASTR the Label",
+          price:49.99,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/aa941632-4ff4-49c7-892d-6397c39e2ea9.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"ASTR the Label",
+          price:49.99,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/c500fcb0-a160-42a0-8b35-6f7ada10db0d.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Love By Design",
+          price:49.99,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/18e58aec-fccd-4c85-be25-0da970a0e4a1.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Renee C",
+          price:24.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/84eadbfe-fe94-42c6-bb23-5876ffbcbc4b.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"NSR",
+          price:49.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/65240b39-d62d-480a-ab49-5e6097d10e3e.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"ASTR the Label",
+          price:49.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/aa941632-4ff4-49c7-892d-6397c39e2ea9.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"ASTR the Label",
+          price:49.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/c500fcb0-a160-42a0-8b35-6f7ada10db0d.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Love By Design",
+          price:49.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/18e58aec-fccd-4c85-be25-0da970a0e4a1.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Renne C",
+          price:74.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/1eae1fe3-d99c-41af-b8e5-7ccf7231f38b.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"French Connection",
+          price:59.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/40a3f7b2-4271-4fd5-85fa-412c1aeef15f.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Alexia Admor",
+          price:79.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/5037abe9-fe74-4419-8740-13938dd291f6.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Alexia Admor",
+          price:89.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/fc8d31eb-49a4-4f6b-bad0-3cbd6bbc97c4.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"NSR",
+          price:49.99,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/9652f0b8-8055-4fd1-8f73-8e1893a56f74.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Alexia Admor",
+          price:79.97,
+        },
+        {
+          image_url:"https://n.nordstrommedia.com/id/sr3/5997e6bd-5f1d-4535-b08c-e0496758b7a4.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266",
+          name:"Alexia Admor",
+          price:69.97,
+        },
+              
+]
+
+  homePageData.forEach(function(elem){
+      
+        let mainDiv=document.createElement("div")
+      
+        let image=document.createElement("img");
+        image.setAttribute("src",elem.image_url)
+
+        let t1=document.createElement("p")
+        t1.innerText=elem.title1
+
+        let t2=document.createElement("p")
+        t2.innerText=elem.title2
+
+        mainDiv.append(image,t1,t2);
+        
+        document.querySelector("#trendingDiv").append(mainDiv)
+  })
+
+    document.querySelector('#rightButton').addEventListener("click",rightFun)
+
+    function rightFun(){
+        document.getElementById('trending').style.scrollBehavior="smooth"
+        document.getElementById('trending').scrollLeft +=1450;
+        
+    }
+
+    document.querySelector('#leftButton').addEventListener("click",leftFun)
+
+    function leftFun(){
+        document.querySelector("#trending").scrollLeft -=1450;
+        document.getElementById('treading').style.scrollBehavior="smooth"
+    }
+
+// treadData
+
+    treadData.forEach(function(elem){
+      
+      let mainDiv=document.createElement("div")
+    
+      let image=document.createElement("img");
+      image.setAttribute("src",elem.image_url)
+
+      let p1=document.createElement("p")
+      p1.innerText=elem.limitedSale
+
+      let p2=document.createElement("p")
+      p2.innerText=elem.pname
+
+      let pPrice=document.createElement("p")
+      pPrice.innerHTML="$"+elem.price
+      pPrice.style.color="black"
+      pPrice.style.fontWeight="bold"
+
+      mainDiv.append(image,p1,p2,pPrice);
+      
+      document.querySelector("#treadDiv").append(mainDiv)
+})
+
+  document.querySelector('#treadrightButton').addEventListener("click",treadRightFun)
+
+  function treadRightFun(){
+    document.getElementById('tread').style.scrollBehavior="smooth"
+      document.getElementById('tread').scrollLeft +=1000;
+    //   document.getElementById('tread').style.scrollBehavior="smooth"
+  }
+
+  document.querySelector('#treadleftButton').addEventListener("click",treadLeftFun)
+
+  function treadLeftFun(){
+      document.querySelector("#tread").scrollLeft -=1000;
+      document.getElementById('tread').style.scrollBehavior="smooth"
+  }
+
+
+  // grey
+
+
+  clothsData.forEach(function(elem){
+      
+      let mainDiv=document.createElement("div")
+    
+      let image=document.createElement("img");
+      image.setAttribute("src",elem.image_url)
+
+      let p1=document.createElement("p")
+      p1.innerText=elem.name
+
+
+      let pPrice=document.createElement("p")
+      pPrice.innerHTML="$"+elem.price
+      pPrice.style.color="black"
+      pPrice.style.fontWeight="bold"
+      pPrice.style.marginLeft="15px"      
+
+      mainDiv.append(image,p1,pPrice);
+      
+      document.querySelector("#greyDiv").append(mainDiv)
+})
+
+  document.querySelector('#greyrightButton').addEventListener("click",greyRightFun)
+
+  function greyRightFun(){
+    document.getElementById('grey').style.scrollBehavior="smooth"
+      document.getElementById('grey').scrollLeft +=1000;
+    //   document.getElementById('tread').style.scrollBehavior="smooth"
+  }
+
+  document.querySelector('#greyleftButton').addEventListener("click",greyLeftFun)
+
+  function greyLeftFun(){
+      document.querySelector("#grey").scrollLeft -=1000;
+      document.getElementById('grey').style.scrollBehavior="smooth"
+  }
+</script>
