@@ -1,4 +1,8 @@
-let userData = JSON.parse(localStorage.getItem("uCart")) || [];
+
+// let userData = JSON.parse(localStorage.getItem("uCart")) || [];
+
+// console.log(userData)
+
     let womensData = [
     {
             img_url:"https://n.nordstrommedia.com/id/sr3/bd22d1c7-3243-416c-9423-54a5320991a2.jpeg?h=365&w=240&dpr=2",
@@ -375,6 +379,9 @@ let userData = JSON.parse(localStorage.getItem("uCart")) || [];
             innerDiv.addEventListener("click",function(){
                 addToCart(elem);
             });
+
+
+
             innerDiv.append(pic,nam, des, cost,btns, ship);
             main.append(innerDiv);
     
@@ -382,21 +389,31 @@ let userData = JSON.parse(localStorage.getItem("uCart")) || [];
     }
     let data = JSON.parse(localStorage.getItem("uCart"));
 
-    displayData(womensData);
-    function addToCart(elem){
+    
 
-        for( let i=0;i<userData.length;i++){
-            if(userData[i].img_url === elem.img_url){
+
+    function addToCart(elem){
+        let wData = JSON.parse(localStorage.getItem("uCart")) || [];
+
+        for( let i=0;i<wData.length;i++){
+            if(wData[i].img_url === elem.img_url && wData[i].name === elem.name && wData[i].discription === elem.discription && wData[i].price === elem.price){
 
                 alert("Product is already in cart");
-                return 0
+                return 0; 
             }
-
+    
         }
-        userData.push(elem);
-        localStorage.setItem("uCart",JSON.stringify(userData));
+        wData.push(elem);
+        localStorage.setItem("uCart",JSON.stringify(wData));
         alert(" Successfully added 😊😊");
+        
     }
+
+
+
+
+
+    displayData(womensData);
 
 
     document.getElementById('price-sort').addEventListener('click', sort)
