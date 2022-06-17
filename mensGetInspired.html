@@ -260,6 +260,18 @@
             /* border: 1px solid black; */
             margin-right: 15px;
         }
+        #trendingDiv>div>button{
+            background-color: transparent;
+            color: #00819d;
+            border: 1px solid #00819d;
+            border-radius: 2px;
+            padding: 8px;
+        }
+        #trendingDiv>div>button:hover{
+            background-color: #00819d;
+            color: white;
+            border: 1px solid transparent;
+        }
         #trendingDiv>div>img{
             /* border: 1px solid red; */
             border:1px solid #e6dfdf;
@@ -638,58 +650,77 @@
   
   
   let newArr=JSON.parse(localStorage.getItem("uCart")) || [];
-
-  mensData.forEach(function(elem){
+  function displaytable(arr){
+    arr.forEach(function(elem){
       
-        let mainDiv=document.createElement("div")
+      let mainDiv=document.createElement("div")
+    
+      let image=document.createElement("img");
+      image.setAttribute("src",elem.image_url)
+
+      let productName=document.createElement("p")
+      productName.innerText=elem.name
+
+      // let productPrice=document.createElement("p")
+      // productPrice.innerText="$"+elem.price
+
+      let btn=document.createElement("button");
+      btn.innerText="Add to Cart"
+      btn.addEventListener("click",function(){
+          if(addToCart(elem.id)===true){
+              alert("Product Added Successfully")
+              newArr.push(elem);
+              localStorage.setItem("uCart",JSON.stringify(newArr))
+          }else{
+              alert("Product Already in cart")
+          }
+
+      })
+     
+    
+
+      if(elem.name=="Nike" || elem.name=="Nautica"){
+          let productPrice=document.createElement("p")
+          productPrice.innerHTML="$"+elem.price
+          productPrice.style.color="red"
+          productPrice.style.fontWeight="bold"
+
+          let extra=document.createElement("p")
+          extra.innerText="New Markdown"
+          extra.style.color="red"
+          mainDiv.append(image,extra,productName,productPrice,btn);
+      }
+      else{
+          let productPrice=document.createElement("p")
+          productPrice.innerText="$"+elem.price
+          mainDiv.append(image,productName,productPrice,btn);
+      }
       
-        let image=document.createElement("img");
-        image.setAttribute("src",elem.image_url)
-
-        let productName=document.createElement("p")
-        productName.innerText=elem.name
-
-        // let productPrice=document.createElement("p")
-        // productPrice.innerText="$"+elem.price
-
-        let btn=document.createElement("button");
-        btn.innerText="Add to Cart"
-        btn.addEventListener("click",addToCart)
-       
-        function addToCart(){
-            newArr.push(elem)
-            localStorage.setItem("uCart",JSON.stringify(newArr))
-        }
-
-        if(elem.name=="Nike" || elem.name=="Nautica"){
-            let productPrice=document.createElement("p")
-            productPrice.innerHTML="$"+elem.price
-            productPrice.style.color="red"
-            productPrice.style.fontWeight="bold"
-
-            let extra=document.createElement("p")
-            extra.innerText="New Markdown"
-            extra.style.color="red"
-            mainDiv.append(image,extra,productName,productPrice,btn);
-        }
-        else{
-            let productPrice=document.createElement("p")
-            productPrice.innerText="$"+elem.price
-            mainDiv.append(image,productName,productPrice,btn);
-        }
-        
-        document.querySelector("#trendingDiv").append(mainDiv)
-  })
+      document.querySelector("#trendingDiv").append(mainDiv)
+})
 
 document.querySelector('#rightButton').addEventListener("click",rightFun)
 
-    function rightFun(){
-        document.getElementById('trending').scrollLeft +=100;
-    }
+  function rightFun(){
+      document.getElementById('trending').style.scrollBehavior="smooth"
+      document.getElementById('trending').scrollLeft +=500;
+  }
 
-    document.querySelector('#leftButton').addEventListener("click",leftFun)
+  document.querySelector('#leftButton').addEventListener("click",leftFun)
 
-    function leftFun(){
-        document.querySelector("#trending").scrollLeft -=100;
-    }
+  function leftFun(){
+      document.querySelector("#trending").scrollLeft -=500;
+      document.getElementById('trending').style.scrollBehavior="smooth"
+  }
+  }
+  displaytable(mensData)
+  function addToCart(id){
+          for(let i=0;i<newArr.length;i++){
+              if(newArr[i].id===id){
+                  return false
+              }
+          }return true
+      }
+
+ 
 </script>
