@@ -1,4 +1,4 @@
-let userData = JSON.parse(localStorage.getItem("uCart")) || [];
+// let userData = JSON.parse(localStorage.getItem("uCart")) || [];
     let womensData = [
     {
             img_url:"https://n.nordstrommedia.com/id/sr3/b8f39ba3-5706-48e7-8167-7ef3278c10bb.jpeg?h=365&w=240&dpr=2",
@@ -377,17 +377,18 @@ let userData = JSON.parse(localStorage.getItem("uCart")) || [];
 
     displayData(womensData);
     function addToCart(elem){
+        let wData = JSON.parse(localStorage.getItem("uCart")) || [];
 
-        for( let i=0;i<userData.length;i++){
-            if(userData[i].img_url === elem.img_url){
+        for( let i=0;i<wData.length;i++){
+            if(wData[i].img_url === elem.img_url && wData[i].name === elem.name && wData[i].discription === elem.discription && wData[i].price === elem.price){
 
                 alert("Product is already in cart");
-                return 0
+                return 0; 
             }
-
+    
         }
-        userData.push(elem);
-        localStorage.setItem("uCart",JSON.stringify(userData));
+        wData.push(elem);
+        localStorage.setItem("uCart",JSON.stringify(wData));
         alert(" Successfully added 😊😊");
     }
 
