@@ -104,28 +104,26 @@
          
           
         }
-        p+div{
+        #exclusive p+div{
             margin: auto;
-            margin-top: 17px;
+            margin-top  : 17px;
             margin-left: 600px;
             padding-bottom: 50px;
-            
          
             color: #0c98bb ;
             text-decoration: underline;
         }
 
-        p{
+        #exclusive p{
             margin: auto;
-            color:white
-
+            color:white;
             
         }
-        h1{
+        #exclusive h1{
             text-align: center;
             color: white;
         }
-        a{
+        #big a{
             color: grey;
             text-decoration: none;
         }
@@ -135,7 +133,7 @@
 
         #exclusive>div>img{
             width: 30px;
-            margin-left: 800px;
+            margin-left: 100px;
             margin-bottom: -20px;
             margin-top: 5px;
         }
@@ -195,8 +193,7 @@
             margin-bottom: 20px;
         }
 
-        input{
-          
+        #email input{
             width: 200px;
             height: 30px;
             margin-left: 1090px;
@@ -206,15 +203,16 @@
      
         
 
-        button{
+        #email button{
             width: 200px;
             height: 35px;
             background-color:#0c98bb ;
             color: white;
             border: none;
+         
         }
 
-        button:hover{
+        #email button:hover{
             background-color: white;
             border: 1px solid #0c98bb ;
             color: #0c98bb ;
@@ -341,7 +339,7 @@
                 <div class="hover">Nordstrom Media Network</div>
                 <div></div>
                 <div></div>
-    
+
             </div>
     
         </div>
@@ -392,3 +390,15 @@
     
 </body>
 </html>
+
+<script>
+    document.getElementById("arrow").addEventListener("click",arrowFun)
+
+function arrowFun(){
+  window.scroll({
+    top:0,
+    left:0,
+    behavior:"smooth",
+  })
+}
+</script>
