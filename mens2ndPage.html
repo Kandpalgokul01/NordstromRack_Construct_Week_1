@@ -260,6 +260,18 @@
             /* border: 1px solid black; */
             margin-right: 15px;
         }
+        #trendingDiv>div>button{
+            background-color: transparent;
+            color: #00819d;
+            border: 1px solid #00819d;
+            border-radius: 2px;
+            padding: 8px;
+        }
+        #trendingDiv>div>button:hover{
+            background-color: #00819d;
+            color: white;
+            border: 1px solid transparent;
+        }
         #trendingDiv>div>img{
             /* border: 1px solid red; */
             border:1px solid #e6dfdf;
@@ -690,13 +702,15 @@
 document.querySelector('#rightButton').addEventListener("click",rightFun)
 
   function rightFun(){
-      document.getElementById('trending').scrollLeft +=100;
+      document.getElementById('trending').style.scrollBehavior="smooth"
+      document.getElementById('trending').scrollLeft +=500;
   }
 
   document.querySelector('#leftButton').addEventListener("click",leftFun)
 
   function leftFun(){
-      document.querySelector("#trending").scrollLeft -=100;
+      document.querySelector("#trending").scrollLeft -=500;
+      document.getElementById('trending').style.scrollBehavior="smooth"
   }
   }
   displaytable(mensData)
