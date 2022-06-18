@@ -1,229 +1,70 @@
-#container{
-  width: 70%;
-  margin-left: 20px;
-  margin-bottom: 20px;
- 
-  /* border: 1px solid black; */
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 1;
-  gap:10px;
+#container {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom:90px;
+    padding: 0;
+    display: grid ;
+    place-items: center
+  }
   
-}
-
-#container>div{
-  /* border: 1px solid red; */
-  height: 500px;
-  margin-top: 50px;
-
- 
-
-}
-
-.box{
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: repeat(9,1fr);
+  #slider-container {
+    height: auto;
+    width:90%;
+    position: relative;
+    overflow: hidden;
+  }
   
-}
-
-.box>div{
-  /* border: 1px solid green; */
-  font-size: large;
-}
-
-#size{
-  width: 200px;
-}
-
-
-
-.bold{
-  font-weight: bold;
-}
-
-#bottom{
-  width: 80%;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  margin-top: 25px;
-  color: grey;
- 
-
-}
-
-.hover:hover{
- 
-  color: #0c98bb;
-  text-decoration: underline;
- 
-
-}
-.hover{
-  color: grey;
-
-}
-
-#symbols{
-  /* border: 1px solid black; */
-  width: 200px;
-  margin-top: 50px;
-}
-
-#big{
-  width: 100%;
-  height: 530px;
-  /* border: 1px solid red; */
-  display: flex;
- 
-}
-#exclusive{
-  width: 100%;
-  height: 180px;
-  /* border: 1px solid green; */
-  background-color:#0c98bb ;
-}
-
-#exclusive>div:last-child{
-
-  text-align: center;
-/* border: 1px solid blue; */
-margin: auto;
-width: 80%px;
-height: 50px;
-
-
-}
-#exclusive p+div{
-  margin: auto;
-  margin-top  : 17px;
-  margin-left: 600px;
-  padding-bottom: 50px;
-
-  color: #0c98bb ;
-  text-decoration: underline;
-}
-
-#exclusive p{
-  margin: auto;
-  color:white;
+  #slider-container .btn {
+    position: absolute;
+    top: calc(40% - 30px);
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid darkgray;
+    border-top: 8px solid darkgray;
+  }
   
-}
-#exclusive h1{
-  text-align: center;
-  color: white;
-}
-#big a{
-  color: grey;
-  text-decoration: none;
-}
-a:hover{
- color: #0c98bb;
-}
-
-#exclusive>div>img{
-  width: 30px;
-  margin-left: 750px;
-  margin-bottom: -20px;
-  margin-top: 5px;
-}
-
-#apps{
-  display: flex;
-
-}
-
-#icon{
-  display: flex;
-
-}
-
-#apps>div>img{
-  width: 20px;
-
-}
-
-
-
-#icon>div>img{
-  width: 30px;
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 5px;
-}
-
-#apps>div:last-child{
-  color: grey;
-}
-
-#arrow{
-  width: 40px;
-  height: 60px;
-  /* border: 1px solid blue; */
-  background-color: white;
-  margin-top: 50px;
-  margin-left: 100px;
-  display: grid;
-  grid-template-columns: 1;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  grid-template-rows: repeat(2,1fr);
-}
-
-#arrow>div{
-  /* border: 1px solid red; */
-  text-align: center;
-  color: grey;
-}
-
-#email{
-  width: 100%;
-  height: 50px;
-  /* border: 1px solid red; */
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-#email input{
-  width: 200px;
-  height: 30px;
-  margin-left: 1090px;
-  margin-bottom: 80px;
-}
-
-
-
-
-#email button{
-  width: 200px;
-  height: 35px;
-  background-color:#0c98bb ;
-  color: white;
-  border: none;
-
-}
-
-#email button:hover{
-  background-color: white;
-  border: 1px solid #0c98bb ;
-  color: #0c98bb ;
-}
-
-#apps>div:last-child:hover{
-
-  color: #0c98bb ;
-  text-decoration: underline;
+  #slider-container .btn:hover {
+    transform: scale(1.2);
+  }
   
-}
-
-
-#icon>div>img:hover{
-  background-color: red;
+  #slider-container .btn.inactive {
+    border-color: rgb(153, 121, 126)
+  }
   
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+  }
+  
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+  
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+  }
+  
+#slider>.slide {
+    height: 90%;
+    margin-left:10px;
+    /* display: grid; */
+    place-items: center;
+  }
+
+  
+  .slider img{
+    width:100%;
+  }
+  .slide>span>p{
+    color: gray;
+    font-size: 18px;
 }
-
-
-#arrow>div:first-child:hover{
-  color:  black;
+p>a{
+    color:rgb(51, 165, 218);
+    font-size: 18px;
 }
