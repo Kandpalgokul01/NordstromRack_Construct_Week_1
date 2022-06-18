@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #navbar{
+            width:100%;
+            height:60px;
+            background-color: white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0px 10px;
+        }
+        #navbar>div>img{
+           width:60px;
+           height:60px;
+        }
+        #navbar>div:last-child{
+         width:70px;
+        height:70px;
+        }
+        body{
+            background-color: ghostwhite;
+        }
+         #fifth{
+            width:40%;
+            margin:auto;
+            padding: 50px;
+            background-color: white;
+            margin-top: 50px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+           
+           
+        }
+        #fifth>div{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }
+        #fifth>div>div>img{
+            width:40px;
+            height:40px;
+        }
+        #fifth>form>input{
+            width:65%;
+            height:35px;
+            margin-bottom: 20px;
+
+        }
+        #fifth>button{
+            background-color:rgb(28, 164, 217);
+            width:70px;
+            height: 30px;
+            border-radius: 5px;
+            color:white;
+            border:none;
+        }
+        #fifth>button:hover{
+            cursor: pointer;
+            background-color:rgb(132, 187, 209); 
+            font-weight: bold;
+            width:75px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div><img src="https://empireoutlets.nyc/content/uploads/2018/10/May_2019_Rack_StatenIsland_NSO_Digital_1000x10001.jpg" alt="Logo"></div>
+        <div><img src="https://voidmx.com/wp-content/uploads/2020/08/cart.png" alt="bag"></div>
+     </div>
+    <div id="fifth">
+        <h2>payment</h2>
+        <div>
+            <div>
+                <input type="radio">
+            </div>
+            <div>
+                <img src="https://www.procurement.utoronto.ca/wp-content/uploads/2020/06/ccard-icon.png" alt="Error">
+            </div>
+            <div>
+                <p>Credit Card</p>
+            </div>
+        </div>
+        <form>
+            <label>Card number*</label><br>
+            <input type="Number"><br>
+            <label>Expiration date*</label><br>
+            <input type="date"><br>
+            <label>Security code*</label><br>
+            <input type="number"><br>
+            
+        </form>
+        <button><a href="">Done</a></button>
+        
+    </div>
+</body>
+</html>
