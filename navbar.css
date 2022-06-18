@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar>h4:first-child {
+    text-align: center;
+    background-color: #00819d;
+    color: white;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+#navbar>h4>span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+#navbar>#searchBar {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar>#searchBar>a>img:first-child {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#navbar>#searchBar>img:last-child {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+#navbar>#searchBar>form>input {
+    padding: 15px;
+    width: 700px;
+    margin-right: 10px;
+
+}
+hr {
+    width: 90%;
+    margin: auto;
+    
+
+}
+
+.NavbarHead {
+    width: 90%;
+
+    height: 60px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.NavbarHead>a:nth-child(11){
+    color:skyblue;
+}
+
+a {
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+
+}
+.NavbarHead>a:first-child {
+    color: red;
+}
+#sign{
+    border: 1px solid red;
+  
+   color:grey;
+   border:transparent;
+   font-size: large;
+   cursor: pointer;
+}
+a:hover{ 
+   font-weight: bold;
+   text-decoration: underline;
+   
+}
