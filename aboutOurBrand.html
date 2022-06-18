@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="carouse.css">
+    <style>
+
+        #firstcontainer>h1{
+            text-align: center;
+            margin: auto;
+            z-index: 95%;
+        
+        }
+
+        #firstcontainer>h3{
+            text-align: left; 
+        }
+
+
+        #firstcontainer>h3+h1+img{
+            margin-top: 20px;
+            z-index: 95%;
+            
+        }
+
+        #last{
+            text-align: center;
+            font-size: 40px;
+        }
+        h1+img{
+            margin-left: 150px;
+        
+        }
+
+       
+    
+    </style>
+</head>
+<body>
+    <div id="firstcontainer">
+        <h3>About Nordstrom Rack</h3>
+        <h1>About Us</h1>
+        <img src="https://n.nordstrommedia.com/id/b2601f83-59c8-4ab5-9f09-ed5c18fdbdd0.jpeg?h=600&w=1609">
+        <div id="main">
+            <div id="container">
+                <div id="slider-container">
+                  <span onclick="slideRight()" class="btn"></span>
+                    <div id="slider">
+                        <div class="slide">
+                            <span>
+                                <img src="https://n.nordstrommedia.com/id/44d6edfa-3e43-41de-833a-fef879e2decd.jpeg?h=513&w=513">
+                                <h3>Free Shipping Over $89</h3>
+                                <p>And enjoy free returns to U.S.Nordstrom Rack stores.</p>
+                                <p></p>
+                                <p><a href="">Learn More</a></p>
+                            </span>
+                        </div>
+                        <div class="slide">
+                            <span>
+                                <img src="https://n.nordstrommedia.com/id/2e9f4916-79a1-4e8e-93df-fc9dc3ecfbcb.jpeg?h=513&amp;w=513">
+                                <h3>The Nordstrom Rack App</h3>
+                                <p>Shop anytime, anywhere! Turn on notifications to get updates</p>
+                                <p>right away, save your favorites and so much more.</p>
+                                <p><a href="">Learn More</a></p>
+                            </span>
+                        </div>
+                        <div class="slide">
+                            <span>
+                                <img src="https://n.nordstrommedia.com/id/76e6a9e0-d965-45e7-9341-881d9cfc5cef.jpeg?h=513&amp;w=513">
+                                <h3>Always at your Service</h3>
+                                <p>Have a question about your order? Our Customer Care team is</p>
+                                <p>here to help. Or find answers in our FAQs.</p>
+                                <p><a href="">Learn More</a></p>
+                            </span>
+                        </div>
+                        <div class="slide">
+                            <span>
+                                <img src="https://n.nordstrommedia.com/id/3cb1827e-714b-48e2-9a96-d3619312fe76.jpeg?h=513&amp;w=513">
+                                <h3>Share the love</h3>
+                                <p>#nordstromrack</p>
+                                <p>Get daily fashion inspo—and be first to know about sales, new</p>
+                                <p>drops, fan finds and more. Tag us and show us what you got.</p>
+                                <p><a href="">Instagram</a> <a href="">Facebook</a></p>
+                            </span>
+                        </div>
+                        <div class="slide">
+                            <span>
+                                <img src="https://n.nordstrommedia.com/id/76dd7090-4024-47d3-8caf-22ddb7af7aa8.jpeg?h=513&amp;w=513">
+                                <h3>Find Your Rack</h3>
+                                <p>With over 240 stores coast to coast, there's a Nordstrom Rack</p>
+                                <p>near you.</p>
+                                <p><a href="">Store Locator</a></p>
+                            </span>
+                        </div>
+                    </div>
+                  <span onclick="slideLeft()" class="btn"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 id="last">Our 2025 Sustainability Goals</h1>
+    <img src="https://n.nordstrommedia.com/id/90975609-ab33-4738-aa98-3f27c1b24af2.jpeg?h=600&w=1609">
+    
+</body>
+</html>
+<script src="carouse.js"></script>

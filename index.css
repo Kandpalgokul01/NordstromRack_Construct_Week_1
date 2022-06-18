@@ -573,6 +573,10 @@ margin-bottom: 70px;
     margin-left: 2px;
 }
 
+
+/* footer css */
+
+
 #container{
     width: 70%;
     margin-left: 20px;
@@ -630,17 +634,15 @@ margin-bottom: 70px;
 }
 
 .hover:hover{
-   
-    color: #0c98bb;
-    text-decoration: underline;
-   
-
+    color: #00819d;
+    text-decoration: underline 3px; 
+    text-underline-position:under;
 }
+
 .hover{
     color: grey;
 
 }
-
 #symbols{
     /* border: 1px solid black; */
     width: 200px;
@@ -694,9 +696,9 @@ margin-bottom: 70px;
     color: grey;
     text-decoration: none;
 }
-a:hover{
+/* a:hover{
    color: #0c98bb;
-}
+} */
 
 #exclusive>div>img{
     width: 30px;

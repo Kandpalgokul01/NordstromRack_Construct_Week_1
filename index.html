@@ -396,7 +396,8 @@
           </div>
           <div class="box">
               <div class="bold">About Us</div>
-              <div class="hover"> <a href="aboutOurBrand.html"> About Our Brand</a></div>
+              <!-- <div class="hover"> <a href="aboutOurBrand.html"> About Our Brand</a></div> -->
+              <div class="hover ft1">About Our Brand</div>
               <div  class="hover">The Nordy Club</div>
               <div class="hover">Store Locator</div>
               <div class="hover">All Brands</div>
@@ -408,7 +409,8 @@
           </div>
           <div  class="box" id="size">
               <div class="bold">Nordstrom Rack & The Community</div>
-              <div class="hover"> <a href="corporate.html">Corporate Social Responsibility</a> </div>
+              <!-- <div class="hover"> <a href="corporate.html">Corporate Social Responsibility</a> </div> -->
+              <div class="hover ft2">Corporate Social Responsibility</div>
               <div class="hover">diversity, Inclusion & Belonging</div>
               <div class="hover">Big Brothers Big Sister</div>
               <div class="hover">Donate Clothes</div>
@@ -1038,6 +1040,15 @@ var clothsData=[
       document.getElementById('grey').style.scrollBehavior="smooth"
   }
 
+  // footer
+
+  document.querySelector('.ft2').addEventListener("click",function(){
+    window.open("corporate.html","_self")
+  })
+
+  document.querySelector('.ft1').addEventListener("click",function(){
+    window.open("aboutOurBrand.html","_self")
+  })
 
   document.getElementById("arrow").addEventListener("click",arrowFun)
 
