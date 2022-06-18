@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #393939;
+}
+#section1{
+    display:flex;
+    width:100%;
+    height:40px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #393939;
+    
+}
+#section2>.list-section{
+    width:19%;
+    height:auto;
+    border-right:3px solid grey;
+}
+.head{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #393939;
+    list-style: none;
+    border-bottom:1px solid #a19e9e;
+    border-top:1px solid #a19e9e;
+    height:35px;
+    width:80%;
+    padding:15px;
+    font-weight: smaller;
+} 
+hr{
+    margin-top: -5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#sort{
+    display:flex;
+    justify-content: space-between;
+    margin-top:-15px;
+    margin-right: 20px;
+}
+#price-sort{
+    width:270px;
+    margin-top: 10px;
+    letter-spacing: 0px;
+    height:30px;
+}
+
+
+#section2{
+    display:flex;
+    justify-content: space-between;
+}
+#section2>.img-section>h4{
+    padding: 20px 0px 0px 10px;
+    font-size: 16px;
+   
+}
+.header{
+    height:60px;
+}
+#cloth-list{
+    display:flex;
+    margin-top: -30px;
+    font-weight: 1px;
+    height: 46px;     
+}
+#cloth-list>h5{
+    margin-right: 15px;
+    font-size: 11.5px;
+    padding-left: 10px;
+    height: 20px;   
+}
+#cloth-list>h2{
+    padding-left: 30px;
+    size: 30px;
+}
+#cloth-list>h5:hover{
+    border-bottom:3px solid black;
+    cursor: pointer;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,250px);
+    gap:20px;
+}
+.wPic{
+    width:100%;
+    height:350px;
+}
+.wName{
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.wData{
+    font-size: 14px;
+    margin-left:10px;
+    margin-top: 4px;
+}
+.wDes>.spn{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+.wDes>.spn:hover{
+    border-bottom: 2px solid teal;
+    cursor: pointer;
+}
+.wPrice{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    color:rgb(11, 10, 10);
+    margin-top: -10px;
+}
+.cart{
+    margin-left: 10px;
+    margin-top:-3px;
+}
+.cart:hover{
+    background-color: rgb(201, 96, 113);
+    border-color:turquoise;
+    cursor: pointer;
+} 

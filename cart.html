@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar>h4:first-child {
+    text-align: center;
+    background-color: #00819d;
+    color: white;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+#navbar>h4>span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+#navbar>#searchBar {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar>#searchBar>a>img:first-child {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#navbar>#searchBar>img:last-child {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+#navbar>#searchBar>form>input {
+    padding: 15px;
+    width: 700px;
+    margin-right: 10px;
+
+}
+hr {
+    width: 90%;
+    margin: auto;
+    
+
+}
+
+.NavbarHead {
+    width: 90%;
+
+    height: 60px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.NavbarHead>a:nth-child(11){
+    color:skyblue;
+}
+
+a {
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+
+}
+.NavbarHead>a:first-child {
+    color: red;
+}
+#sign{
+    border: 1px solid red;
+  
+   color:grey;
+   border:transparent;
+   font-size: large;
+   cursor: pointer;
+}
+a:hover{ 
+   font-weight: bold;
+   text-decoration: underline;
+   
+}
+    </style>
+     <style>
+        #products{
+            display:flex;
+            width:55%;
+           
+            flex-wrap: wrap;
+            
+            gap:20px;
+            padding:20px;
+            margin-bottom: 30px;
+            
+        }
+        #products>div>img{
+            width:100%;
+        }
+        #products>div{
+            width:200px;
+            text-align: center;
+        }
+        #container{
+            width:80%;
+            
+            display: flex;
+            margin:auto;
+           justify-content: space-between;
+           margin-top:30px;
+           
+        }
+        #box{
+            width:30%;
+            border:1px solid violet
+        }
+        #products>div>button{
+            width:100px;
+            height:30px;
+            background-color:rgb(77, 165, 200);
+            border-radius: 5px;
+            color:white;
+            border:none;
+        }
+        #products>div>button:hover{
+            background-color: skyblue;
+            cursor: pointer;
+            font-weight: bold;
+            width:105px;
+            
+        }
+        #products>div>img+h3{
+            color:teal
+        }
+        #products>div>img+h3:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #products>div>img+h3+p{
+            color:palevioletred
+        }
+        
+    </style>
+    <style>
+        #box{
+            display: flex;
+            justify-content: space-between;
+            
+
+        }
+        #box>#b1>p{
+          margin-bottom: 30px;
+        }
+        #box>#b2>input{
+            margin-bottom:30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h4>Give $150 in Gift Cards,earn a $25 Promo Card! Ends 6/19. <span>Gift Cards & Restriction</span></h4>
+        <div id="searchBar">
+           <a href=""><img src="data:image/png;base64,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"
+                alt=""></a> 
+            <form>
+                <input type="search" placeholder="Search for products or brands">
+            </form>
+            <h2 id="sign"> <a href="signUp.html">Sign Up</a> </h2>
+            
+                
+               
+                
+           
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvrjNjezNbh-cXRToEjKhMPl3mC40G_gFL6Q&usqp=CAU"
+                alt="">
+        </div>
+        <hr>
+        <div class="NavbarHead">
+            <a href="">
+                <h3>Clearance</h3>
+            </a>
+            <a href="./womens_page/womens.html">
+                <h3>Women</h3>
+            </a>
+            <a href="">
+                <h3>Men</h3>
+            </a>
+            <a href="">
+                <h3>Kids</h3>
+            </a>
+            <a href="">
+                <h3>Shoes</h3>
+            </a>
+            <a href="">
+                <h3>Activwear</h3>
+            </a>
+            <a href="">
+                <h3>Bag & Accessories</h3>
+            </a>
+            <a href="">
+                <h3>Home</h3>
+            </a>
+            <a href="">
+                <h3>Beauty</h3>
+            </a>
+            <a href="">
+                <h3>Gifts</h3>
+            </a>
+            <a href="">
+                <h3>Flash & Events</h3>
+            </a>
+    
+            </div>
+    </div>
+
+    <div id="container">
+        <div id="products">
+            <!-- all products data will be appended here -->
+        </div>
+        <div id="box">
+           <div id="b1">
+              <p>Subtotal</p>
+              <p>Shipping</p>
+              <p>Estimate tax</p>
+              <hr>
+              <h3>Estimate total</h3>
+           </div>
+           <div id="b2">
+            <p id="one"></p>
+            <p id="two"></p>
+            <p id="three"></p>
+            <hr>
+            <p id="four"></p>
+            
+
+           </div>
+             
+        </div>
+
+    </div>
+   
+</body>
+</html>
+<script>
+     
+    let productCont=document.querySelector("#products");
+     let cartLs=JSON.parse(localStorage.getItem("uCart")) || [];
+     let totalprice=0;
+     function displaytable(data){
+        productCont.innerHTML=""
+        tatalprice=0
+        data.forEach(function(el){
+            totalprice=totalprice+(Number(el.price))
+            let product=document.createElement("div");
+            productCont.append(product)
+            let img=document.createElement("img");
+            img.src=el.image_url
+            let name=document.createElement("h3");
+            name.innerText=el.name
+            let price=document.createElement("p");
+            price.innerText= "$"+el.price
+            let total=document.querySelector("#one")
+            total.innerText= "$"+totalprice
+            let ship=document.querySelector("#two").innerText
+            ship=7.96
+            let tax=document.querySelector("#three").innerText
+            tax=8.65
+            document.querySelector("#four").value="$"+(total+ship+tax)
+
+            let btn=document.createElement("button")
+            btn.innerText="Remove"
+
+            btn.addEventListener("click",function(){
+                DeleteData(el.id)
+            })
+            product.append(img,name,price,btn,)
+        })
+    }
+
+
+    displaytable(cartLs);
+
+
+    function DeleteData(id){
+        let deleted=cartLs.filter(function(el){
+            return el.id!=id
+           
+        })
+        cartLs=deleted;
+        localStorage.setItem("uCart",JSON.stringify(cartLs))
+        displaytable(cartLs);
+        window.location.reload()
+        
+    }
+
+</script>
